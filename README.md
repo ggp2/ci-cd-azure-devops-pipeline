@@ -1,4 +1,4 @@
-\#  Pipeline CI/CD Azure avec Terraform et GitHub Actions
+#  Pipeline CI/CD Azure avec Terraform et GitHub Actions
 
 
 
@@ -16,11 +16,11 @@ Ce projet met en place un pipeline CI/CD complet et automatisé sur Microsoft Az
 
 - Docker (Conteneurisation)
 
-\- Azure Container Apps
+- Azure Container Apps
 
-\- Azure Container Registry (ACR)
+- Azure Container Registry (ACR)
 
-\- Authentification OIDC (sans mot de passe)
+- Authentification OIDC (sans mot de passe)
 
 
 
