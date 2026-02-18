@@ -4,10 +4,7 @@
 
 ##  Présentation
 
-
-
 Ce projet met en place un pipeline CI/CD complet et automatisé sur Microsoft Azure en utilisant :
-
 
 - Terraform (Infrastructure as Code)
 
@@ -22,13 +19,10 @@ Ce projet met en place un pipeline CI/CD complet et automatisé sur Microsoft Az
 - Authentification OIDC (sans mot de passe)
 
 
-
 Le pipeline permet de construire, tester, publier et déployer automatiquement une application Flask.
 
 
-
 ---
-
 
 
 ##  Architecture
@@ -36,10 +30,7 @@ Le pipeline permet de construire, tester, publier et déployer automatiquement u
 
 Développeur → GitHub → GitHub Actions → ACR → Azure Container Apps → Production
 
-
 ---
-
-
 
 ##  Technologies utilisées
 
@@ -66,8 +57,6 @@ Développeur → GitHub → GitHub Actions → ACR → Azure Container Apps → 
 
 
 ##  Fonctionnement du pipeline
-
-
 
 1\. Push sur la branche `main`
 
@@ -99,52 +88,31 @@ Développeur → GitHub → GitHub Actions → ACR → Azure Container Apps → 
 
 ---
 
-
-
-\##  Déploiement
-
-
+##  Déploiement
 
 L’infrastructure est provisionnée avec Terraform :
-
 
 
 ```bash
 
 terraform init
-
 terraform apply
+```
 
-
-
-
-
-
-
-
-
-
-
-\## 🌐 Démo en ligne
-
-
-
-https://flask-app-demo.reddune-a48762f9.northeurope.azurecontainerapps.io
-
-
-
-
-
-\##  Auteur
-
+## 🌐 Démo en ligne
 
 
 ```bash
 
+https://flask-app-demo.reddune-a48762f9.northeurope.azurecontainerapps.io
+```
+
+
+##  Auteur
+
+```bash
 Providence Goma
-
 Ingénieur Cloud / DevOps
-
 GitHub : https://github.com/ggp2
 
 
