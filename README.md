@@ -1,26 +1,16 @@
 #  Pipeline CI/CD Azure avec Terraform et GitHub Actions
 
-
-
 ##  Présentation
-
 Ce projet met en place un pipeline CI/CD complet et automatisé sur Microsoft Azure en utilisant :
 
 - Terraform (Infrastructure as Code)
-
 - GitHub Actions (CI/CD)
-
 - Docker (Conteneurisation)
-
 - Azure Container Apps
-
 - Azure Container Registry (ACR)
-
 - Authentification OIDC (sans mot de passe)
 
-
 Le pipeline permet de construire, tester, publier et déployer automatiquement une application Flask.
-
 
 ---
 
@@ -29,6 +19,31 @@ Le pipeline permet de construire, tester, publier et déployer automatiquement u
 
 
 Développeur → GitHub → GitHub Actions → ACR → Azure Container Apps → Production
+
+---
+
+##  Structure 
+
+
+```bash
+ci-cd-azure-devops-pipeline/
+│
+├── app/
+├── Dockerfile
+├── requirements.txt
+│
+├── terraform/
+│   ├── main.tf
+│   ├── variables.tf
+│   ├── outputs.tf
+│   └── provider.tf
+│
+└── .github/
+    └── workflows/
+        ├── terraform.yml
+        └── pipeline.yml
+
+```
 
 ---
 
@@ -69,13 +84,10 @@ Développeur → GitHub → GitHub Actions → ACR → Azure Container Apps → 
 5\. Déploiement automatique sur Azure
 
 
-
 ---
 
 
-
 ##  Sécurité
-
 
 
 - Authentification sans mot de passe via OIDC
@@ -83,8 +95,6 @@ Développeur → GitHub → GitHub Actions → ACR → Azure Container Apps → 
 - Managed Identity pour l’accès à ACR
 
 - Aucun secret sensible dans le dépôt
-
-
 
 ---
 
@@ -103,7 +113,6 @@ terraform apply
 
 
 ```bash
-
 https://flask-app-demo.reddune-a48762f9.northeurope.azurecontainerapps.io
 ```
 
