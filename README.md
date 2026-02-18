@@ -65,7 +65,7 @@ Développeur → GitHub → GitHub Actions → ACR → Azure Container Apps → 
 
 
 
-\##  Fonctionnement du pipeline
+##  Fonctionnement du pipeline
 
 
 
@@ -85,15 +85,15 @@ Développeur → GitHub → GitHub Actions → ACR → Azure Container Apps → 
 
 
 
-\##  Sécurité
+##  Sécurité
 
 
 
-\- Authentification sans mot de passe via OIDC
+- Authentification sans mot de passe via OIDC
 
-\- Managed Identity pour l’accès à ACR
+- Managed Identity pour l’accès à ACR
 
-\- Aucun secret sensible dans le dépôt
+- Aucun secret sensible dans le dépôt
 
 
 
