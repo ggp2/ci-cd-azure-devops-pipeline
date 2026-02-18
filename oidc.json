@@ -1,0 +1,7 @@
+﻿{
+  "name": "github-oidc-main",
+  "issuer": "https://token.actions.githubusercontent.com",
+  "subject": "repo:ggp2/ci-cd-azure-devops-pipeline:ref:refs/heads/main",
+  "description": "OIDC for GitHub Actions on main",
+  "audiences": ["api://AzureADTokenExchange"]
+}
