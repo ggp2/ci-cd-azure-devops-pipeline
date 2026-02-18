@@ -2,7 +2,7 @@
 
 
 
-\##  Présentation
+##  Présentation
 
 
 
@@ -10,11 +10,11 @@ Ce projet met en place un pipeline CI/CD complet et automatisé sur Microsoft Az
 
 
 
-\- Terraform (Infrastructure as Code)
+- Terraform (Infrastructure as Code)
 
-\- GitHub Actions (CI/CD)
+- GitHub Actions (CI/CD)
 
-\- Docker (Conteneurisation)
+- Docker (Conteneurisation)
 
 \- Azure Container Apps
 
