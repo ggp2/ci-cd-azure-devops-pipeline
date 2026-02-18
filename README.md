@@ -9,7 +9,6 @@
 Ce projet met en place un pipeline CI/CD complet et automatisé sur Microsoft Azure en utilisant :
 
 
-
 - Terraform (Infrastructure as Code)
 
 - GitHub Actions (CI/CD)
@@ -32,35 +31,33 @@ Le pipeline permet de construire, tester, publier et déployer automatiquement u
 
 
 
-\##  Architecture
-
+##  Architecture
 
 
 Développeur → GitHub → GitHub Actions → ACR → Azure Container Apps → Production
-
 
 
 ---
 
 
 
-\##  Technologies utilisées
+##  Technologies utilisées
 
 
 
-\- Microsoft Azure (Container Apps, ACR, Managed Identity)
+- Microsoft Azure (Container Apps, ACR, Managed Identity)
 
-\- Terraform
+- Terraform
 
-\- GitHub Actions
+- GitHub Actions
 
-\- Docker
+- Docker
 
-\- Python (Flask, Pytest)
+- Python (Flask, Pytest)
 
-\- OIDC
+- OIDC
 
-\- RBAC
+- RBAC
 
 
 
