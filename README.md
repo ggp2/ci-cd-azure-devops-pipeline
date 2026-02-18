@@ -26,22 +26,27 @@ Développeur → GitHub → GitHub Actions → ACR → Azure Container Apps → 
 
 
 ```bash
+
 ci-cd-azure-devops-pipeline/
 │
 ├── app/
+│   ├── app.py
+│   └── test_app.py
+│
 ├── Dockerfile
 ├── requirements.txt
 │
 ├── terraform/
+│   ├── provider.tf
 │   ├── main.tf
 │   ├── variables.tf
-│   ├── outputs.tf
-│   └── provider.tf
+│   └── outputs.tf
 │
 └── .github/
     └── workflows/
         ├── terraform.yml
         └── pipeline.yml
+
 
 ```
 
