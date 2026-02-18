@@ -33,6 +33,10 @@ resource "azurerm_container_app" "app" {
   revision_mode                = "Single"
 
   template {
+
+    min_replicas = 1
+    max_replicas = 10
+
     container {
       name   = "app"
       image  = "mcr.microsoft.com/azuredocs/containerapps-helloworld:latest"
@@ -44,14 +48,17 @@ resource "azurerm_container_app" "app" {
         value = "5000"
       }
     }
+
   }
-ingress {
-  external_enabled = true
-  target_port      = 80
-  transport        = "auto"
- 
+
+
+  ingress {
+    external_enabled = true
+    target_port      = 5000
+    transport        = "auto"
+
     traffic_weight {
-      percentage = 100
+      percentage      = 100
       latest_revision = true
     }
   }
